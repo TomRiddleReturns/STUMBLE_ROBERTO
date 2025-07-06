@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: linear-gradient(to right, #fefefe, #e3f2fd);
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #9b59b6, #3498db, #e91e63);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 4px solid #222;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e91e63;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #e91e63;
+  display: block;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+}
+
+#about img {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#skills li {
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+#skills li:hover {
+  transform: scale(1.05);
+}
+
+#academics ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+#academics li {
+  margin-bottom: 0.75rem;
+  color: #444;
+  font-weight: 500;
+}
+
+#achievements .project {
+  background: linear-gradient(to top right, #ffffff, #dbe9ff);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px dashed #7e57c2;
+  transition: transform 0.3s ease;
+}
+
+#achievements .project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#contact {
+  text-align: center;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+#contact p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  #about img {
+    max-width: 90%;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
